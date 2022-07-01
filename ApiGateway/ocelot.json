@@ -1,6 +1,7 @@
 {
   "ReRoutes": [
     {
+      //profile
       "DownstreamPathTemplate": "/register-user",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -246,8 +247,6 @@
       "UpstreamHttpMethod": [ "GET" ]
     },
 
-
-
     {
       "DownstreamPathTemplate": "/user",
       "DownstreamScheme": "https",
@@ -258,7 +257,86 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/user",
-      "UpstreamHttpMethod": [ "POST", "PUT" ,"GET"]
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+
+    //posts
+    {
+      "DownstreamPathTemplate": "/post",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44315"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/post",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/add-like",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44315"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/add-like",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/add-dislike",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44315"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/add-dislike",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/remove-like",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44315"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/remove-like",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/remove-dislike",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44315"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/remove-dislike",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/add-comment",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44315"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/add-comment",
+      "UpstreamHttpMethod": [ "POST" ]
     }
   ]
 }
