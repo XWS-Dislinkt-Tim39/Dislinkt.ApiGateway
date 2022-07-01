@@ -1,0 +1,264 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/register-user",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/register-user",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    
+    {
+      "DownstreamPathTemplate": "/sign-up",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/sign-up",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/approve-user/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/approve-user/{id}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/change-privacy",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/change-privacy",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/education",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/education",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/work-experience",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/work-experience",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/search-skills",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/search-skills",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-all-skills",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/get-all-skills",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-user-skills",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/get-user-skills",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/add-new-skill",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/add-new-skill",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/skill",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/skill",
+      "UpstreamHttpMethod": [ "POST", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-all-interests",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/get-all-interests",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-user-interests",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/get-user-interests",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/search-interests",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/search-interests",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/add-new-interest",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/add-new-interest",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/interest",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/interest",
+      "UpstreamHttpMethod": [ "POST", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-all-users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/get-all-users",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-public-users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/get-public-users",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/search-users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/search-users",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+
+
+    {
+      "DownstreamPathTemplate": "/user",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/user",
+      "UpstreamHttpMethod": [ "POST", "PUT" ,"GET"]
+    }
+  ]
+}
