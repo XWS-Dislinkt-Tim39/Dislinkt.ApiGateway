@@ -13,7 +13,7 @@
       "UpstreamPathTemplate": "/api/Profile/register-user",
       "UpstreamHttpMethod": [ "POST" ]
     },
-    
+
     {
       "DownstreamPathTemplate": "/sign-up",
       "DownstreamScheme": "https",
@@ -337,6 +337,60 @@
       ],
       "UpstreamPathTemplate": "/api/Posts/add-comment",
       "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    //jobs
+    {
+      "DownstreamPathTemplate": "/add-job-offer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44386"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/add-job-offer",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/search-job",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44386"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/search-job",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-all-jobs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44386"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/get-all-jobs",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-user-jobs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44386"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/get-user-jobs",
+      "UpstreamHttpMethod": [ "GET" ]
     }
+
   ]
 }
