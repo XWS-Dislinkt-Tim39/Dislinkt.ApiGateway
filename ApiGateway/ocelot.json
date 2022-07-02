@@ -50,7 +50,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/change-privacy",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -63,7 +67,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/education",
-      "UpstreamHttpMethod": [ "POST", "PUT" ]
+      "UpstreamHttpMethod": [ "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -76,7 +84,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/work-experience",
-      "UpstreamHttpMethod": [ "POST", "PUT" ]
+      "UpstreamHttpMethod": [ "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/search-skills",
@@ -127,7 +139,12 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/add-new-skill",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
+
     },
 
     {
@@ -140,7 +157,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/skill",
-      "UpstreamHttpMethod": [ "POST", "DELETE" ]
+      "UpstreamHttpMethod": [ "POST", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -192,7 +213,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/add-new-interest",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -205,7 +230,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/interest",
-      "UpstreamHttpMethod": [ "POST", "DELETE" ]
+      "UpstreamHttpMethod": [ "POST", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -271,7 +300,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/post",
-      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -284,7 +317,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/add-like",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -297,7 +334,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/add-dislike",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -310,7 +351,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/remove-like",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -323,7 +368,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/remove-dislike",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -336,7 +385,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/add-comment",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     //jobs
@@ -350,7 +403,11 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Jobs/add-job-offer",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
     },
 
     {
@@ -390,6 +447,7 @@
       ],
       "UpstreamPathTemplate": "/api/Jobs/get-user-jobs",
       "UpstreamHttpMethod": [ "GET" ]
+     
     }
 
   ]
