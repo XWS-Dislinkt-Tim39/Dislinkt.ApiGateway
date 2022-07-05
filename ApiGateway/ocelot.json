@@ -1,7 +1,22 @@
 {
   "ReRoutes": [
+    //auth
     {
-      //profile
+
+
+      "DownstreamPathTemplate": "/sign-up",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/sign-up",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //profile
+    {
       "DownstreamPathTemplate": "/register-user",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -14,18 +29,6 @@
       "UpstreamHttpMethod": [ "POST" ]
     },
 
-    {
-      "DownstreamPathTemplate": "/sign-up",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": "44348"
-        }
-      ],
-      "UpstreamPathTemplate": "/api/Profile/sign-up",
-      "UpstreamHttpMethod": [ "GET" ]
-    },
 
     {
       "DownstreamPathTemplate": "/approve-user/{id}",
@@ -447,7 +450,22 @@
       ],
       "UpstreamPathTemplate": "/api/Jobs/get-user-jobs",
       "UpstreamHttpMethod": [ "GET" ]
-     
+
+    },
+    //Chat
+   
+    {
+      "DownstreamPathTemplate": "/api/chat/send",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44379"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Chat/send",
+      "UpstreamHttpMethod": [ "POST" ]
+
     }
 
   ]
