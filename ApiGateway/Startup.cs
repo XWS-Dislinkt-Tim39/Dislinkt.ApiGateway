@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Prometheus;
 
 namespace ApiGateway
 {
@@ -96,11 +97,13 @@ namespace ApiGateway
 
             app.UseAuthentication();
             app.UseRouting();
+            app.UseHttpMetrics();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapMetrics();
             });
 
            await  app.UseOcelot();
