@@ -631,11 +631,10 @@
       }
     },
 
-
     //Chat
 
     {
-      "DownstreamPathTemplate": "/api/chat/send",
+      "DownstreamPathTemplate": "/create-chat",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -643,9 +642,44 @@
           "Port": "44379"
         }
       ],
-      "UpstreamPathTemplate": "/api/Chat/send",
+      "UpstreamPathTemplate": "/api/Chat/create-chat",
       "UpstreamHttpMethod": [ "POST" ]
-
+    },
+    {
+      "DownstreamPathTemplate": "/get-by-from-to",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44379"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Chat/get-by-from-to",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/delete-chat",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44379"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Chat/delete-chat",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/add-new-message",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44379"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Chat/add-new-message",
+      "UpstreamHttpMethod": [ "POST" ]
     }
 
   ]
