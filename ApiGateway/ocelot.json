@@ -470,6 +470,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/follow",
       "DownstreamScheme": "https",
@@ -486,6 +487,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/unfollow",
       "DownstreamScheme": "https",
@@ -502,6 +504,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/createFollowRequest",
       "DownstreamScheme": "https",
@@ -518,6 +521,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/getFollowRequests",
       "DownstreamScheme": "https",
@@ -534,6 +538,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/approveFollow",
       "DownstreamScheme": "https",
@@ -550,6 +555,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/block",
       "DownstreamScheme": "https",
@@ -566,6 +572,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/unblock",
       "DownstreamScheme": "https",
@@ -582,6 +589,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/getBlocked",
       "DownstreamScheme": "https",
@@ -598,6 +606,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/getWhoBlocksMe",
       "DownstreamScheme": "https",
@@ -614,6 +623,7 @@
         "AllowedScopes": []
       }
     },
+
     {
       "DownstreamPathTemplate": "/getFollowRecommendations",
       "DownstreamScheme": "https",
@@ -645,6 +655,7 @@
       "UpstreamPathTemplate": "/api/Chat/create-chat",
       "UpstreamHttpMethod": [ "POST" ]
     },
+
     {
       "DownstreamPathTemplate": "/get-by-from-to",
       "DownstreamScheme": "https",
@@ -657,6 +668,7 @@
       "UpstreamPathTemplate": "/api/Chat/get-by-from-to",
       "UpstreamHttpMethod": [ "GET" ]
     },
+
     {
       "DownstreamPathTemplate": "/delete-chat",
       "DownstreamScheme": "https",
@@ -669,6 +681,7 @@
       "UpstreamPathTemplate": "/api/Chat/delete-chat",
       "UpstreamHttpMethod": [ "POST" ]
     },
+
     {
       "DownstreamPathTemplate": "/add-new-message",
       "DownstreamScheme": "https",
@@ -679,6 +692,59 @@
         }
       ],
       "UpstreamPathTemplate": "/api/Chat/add-new-message",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    //Notifications
+    {
+      "DownstreamPathTemplate": "/get-all-by-userId",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Notifications/get-all-by-userId",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/update-notification-settings",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Notifications/update-notification-settings",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-without-messages-by-userId",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Notifications/get-without-messages-by-userId",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/update-notification-seen",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Notifications/update-notification-seen",
       "UpstreamHttpMethod": [ "POST" ]
     }
 
