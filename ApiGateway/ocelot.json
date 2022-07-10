@@ -42,6 +42,18 @@
       "UpstreamPathTemplate": "/api/Profile/approve-user/{id}",
       "UpstreamHttpMethod": [ "POST" ]
     },
+    {
+      "DownstreamPathTemplate": "/delete-user/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44348"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile/delete-user/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
 
     {
       "DownstreamPathTemplate": "/change-privacy",
@@ -455,6 +467,32 @@
 
     //Coonnetions
     {
+      "DownstreamPathTemplate": "/registerUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44357"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Connections/registerUser",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/deleteUser/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44357"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Connections/deleteUser/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+
+    },
+    {
       "DownstreamPathTemplate": "/getFollowing",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -708,6 +746,30 @@
       "UpstreamPathTemplate": "/api/Notifications/get-all-by-userId",
       "UpstreamHttpMethod": [ "GET" ]
     },
+    {
+      "DownstreamPathTemplate": "/delete-by-userId/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Notifications/delete-by-userId/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/create-notification-settings",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Notifications/create-notification-settings",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
 
     {
       "DownstreamPathTemplate": "/update-notification-settings",
@@ -746,6 +808,46 @@
       ],
       "UpstreamPathTemplate": "/api/Notifications/update-notification-seen",
       "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    //Admin Dashboard
+    {
+      "DownstreamPathTemplate": "/create-activity",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44318"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AdminDashboard/create-activity",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/get-all",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44318"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AdminDashboard/get-all",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/delete-by-userId",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44318"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AdminDashboard/delete-by-userId",
+      "UpstreamHttpMethod": [ "DELETE" ]
     }
 
   ]
