@@ -1,28 +1,41 @@
 {
   "ReRoutes": [
-    //auth
+
+    //profile
+
     {
-
-
-      "DownstreamPathTemplate": "/sign-up",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Profile",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/sign-up",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/sign-up",
       "UpstreamHttpMethod": [ "GET" ]
     },
-    //profile
+    
     {
       "DownstreamPathTemplate": "/register-user",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/register-user",
@@ -32,11 +45,11 @@
 
     {
       "DownstreamPathTemplate": "/approve-user/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/approve-user/{id}",
@@ -44,11 +57,11 @@
     },
     {
       "DownstreamPathTemplate": "/delete-user/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/delete-user/{id}",
@@ -57,11 +70,11 @@
 
     {
       "DownstreamPathTemplate": "/change-privacy",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/change-privacy",
@@ -74,11 +87,11 @@
 
     {
       "DownstreamPathTemplate": "/education",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/education",
@@ -91,11 +104,11 @@
 
     {
       "DownstreamPathTemplate": "/work-experience",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/work-experience",
@@ -107,11 +120,11 @@
     },
     {
       "DownstreamPathTemplate": "/search-skills",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/search-skills",
@@ -120,11 +133,11 @@
 
     {
       "DownstreamPathTemplate": "/get-all-skills",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/get-all-skills",
@@ -133,11 +146,11 @@
 
     {
       "DownstreamPathTemplate": "/get-user-skills",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/get-user-skills",
@@ -146,11 +159,11 @@
 
     {
       "DownstreamPathTemplate": "/add-new-skill",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/add-new-skill",
@@ -164,11 +177,11 @@
 
     {
       "DownstreamPathTemplate": "/skill",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/skill",
@@ -181,11 +194,11 @@
 
     {
       "DownstreamPathTemplate": "/get-all-interests",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/get-all-interests",
@@ -194,11 +207,11 @@
 
     {
       "DownstreamPathTemplate": "/get-user-interests",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/get-user-interests",
@@ -207,11 +220,11 @@
 
     {
       "DownstreamPathTemplate": "/search-interests",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/search-interests",
@@ -220,11 +233,11 @@
 
     {
       "DownstreamPathTemplate": "/add-new-interest",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/add-new-interest",
@@ -237,11 +250,11 @@
 
     {
       "DownstreamPathTemplate": "/interest",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/interest",
@@ -254,11 +267,11 @@
 
     {
       "DownstreamPathTemplate": "/get-all-users",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/get-all-users",
@@ -267,11 +280,11 @@
 
     {
       "DownstreamPathTemplate": "/get-public-users",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/get-public-users",
@@ -280,11 +293,11 @@
 
     {
       "DownstreamPathTemplate": "/search-users",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/search-users",
@@ -293,11 +306,11 @@
 
     {
       "DownstreamPathTemplate": "/user",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44348"
+          "Host": "dislinkt.profile",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Profile/user",
@@ -305,17 +318,31 @@
     },
 
     //posts
+
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.posts",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
     {
       "DownstreamPathTemplate": "/post",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44315"
+          "Host": "dislinkt.posts",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/post",
-      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ],
+      "UpstreamHttpMethod": [ "POST", "PUT" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Auth_key",
         "AllowedScopes": []
@@ -323,12 +350,37 @@
     },
 
     {
+      "DownstreamPathTemplate": "/post",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.posts",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/post",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/save-image",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.posts",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Posts/save-image",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
       "DownstreamPathTemplate": "/add-like",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44315"
+          "Host": "dislinkt.posts",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/add-like",
@@ -344,8 +396,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44315"
+          "Host": "dislinkt.posts",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/add-dislike",
@@ -361,8 +413,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44315"
+          "Host": "dislinkt.posts",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/remove-like",
@@ -378,8 +430,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44315"
+          "Host": "dislinkt.posts",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/remove-dislike",
@@ -395,8 +447,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44315"
+          "Host": "dislinkt.posts",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Posts/add-comment",
@@ -409,12 +461,65 @@
 
     //jobs
     {
-      "DownstreamPathTemplate": "/add-job-offer",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44386"
+          "Host": "dislinkt.jobs",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/addUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.jobs",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/addUser",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/getJobRecommendations",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.jobs",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/getJobRecommendations",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/deleteUser/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.jobs",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/deleteUser/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/add-job-offer",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.jobs",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Jobs/add-job-offer",
@@ -427,11 +532,11 @@
 
     {
       "DownstreamPathTemplate": "/search-job",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44386"
+          "Host": "dislinkt.jobs",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Jobs/search-job",
@@ -440,11 +545,11 @@
 
     {
       "DownstreamPathTemplate": "/get-all-jobs",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44386"
+          "Host": "dislinkt.jobs",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Jobs/get-all-jobs",
@@ -453,11 +558,11 @@
 
     {
       "DownstreamPathTemplate": "/get-user-jobs",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44386"
+          "Host": "dislinkt.jobs",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Jobs/get-user-jobs",
@@ -465,14 +570,55 @@
 
     },
 
-    //Coonnetions
     {
-      "DownstreamPathTemplate": "/registerUser",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/addSkill",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.jobs",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Jobs/addSkill",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+    //saga
+    {
+      "DownstreamPathTemplate": "/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.saga",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Saga/register",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+
+    //Connections
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.connections",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Connections/",
+      "UpstreamHttpMethod": [ "GET" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/registerUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/registerUser",
@@ -481,11 +627,11 @@
     },
     {
       "DownstreamPathTemplate": "/deleteUser/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/deleteUser/{id}",
@@ -494,11 +640,11 @@
     },
     {
       "DownstreamPathTemplate": "/getFollowing",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/getFollowing",
@@ -511,11 +657,11 @@
 
     {
       "DownstreamPathTemplate": "/follow",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/follow",
@@ -528,11 +674,11 @@
 
     {
       "DownstreamPathTemplate": "/unfollow",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/unfollow",
@@ -545,11 +691,11 @@
 
     {
       "DownstreamPathTemplate": "/createFollowRequest",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/createFollowRequest",
@@ -562,11 +708,11 @@
 
     {
       "DownstreamPathTemplate": "/getFollowRequests",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/getFollowRequests",
@@ -579,11 +725,11 @@
 
     {
       "DownstreamPathTemplate": "/approveFollow",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/approveFollow",
@@ -593,14 +739,30 @@
         "AllowedScopes": []
       }
     },
+    {
+      "DownstreamPathTemplate": "/rejectFollow",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.connections",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Connections/rejectFollow",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Auth_key",
+        "AllowedScopes": []
+      }
+    },
 
     {
       "DownstreamPathTemplate": "/block",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/block",
@@ -613,11 +775,11 @@
 
     {
       "DownstreamPathTemplate": "/unblock",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/unblock",
@@ -630,11 +792,11 @@
 
     {
       "DownstreamPathTemplate": "/getBlocked",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/getBlocked",
@@ -647,11 +809,11 @@
 
     {
       "DownstreamPathTemplate": "/getWhoBlocksMe",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/getWhoBlocksMe",
@@ -664,11 +826,11 @@
 
     {
       "DownstreamPathTemplate": "/getFollowRecommendations",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44357"
+          "Host": "dislinkt.connections",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Connections/getFollowRecommendations",
@@ -682,12 +844,24 @@
     //Chat
 
     {
-      "DownstreamPathTemplate": "/create-chat",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44379"
+          "Host": "dislinkt.chat",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Chat/",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/create-chat",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.chat",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Chat/create-chat",
@@ -696,11 +870,11 @@
 
     {
       "DownstreamPathTemplate": "/get-by-from-to",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44379"
+          "Host": "dislinkt.chat",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Chat/get-by-from-to",
@@ -709,11 +883,11 @@
 
     {
       "DownstreamPathTemplate": "/delete-chat",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44379"
+          "Host": "dislinkt.chat",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Chat/delete-chat",
@@ -722,11 +896,11 @@
 
     {
       "DownstreamPathTemplate": "/add-new-message",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44379"
+          "Host": "dislinkt.chat",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Chat/add-new-message",
@@ -735,12 +909,24 @@
 
     //Notifications
     {
-      "DownstreamPathTemplate": "/get-all-by-userId",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44378"
+          "Host": "dislinkt.notifications",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Notifications/",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/get-all-by-userId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.notifications",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Notifications/get-all-by-userId",
@@ -748,11 +934,11 @@
     },
     {
       "DownstreamPathTemplate": "/delete-by-userId/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44378"
+          "Host": "dislinkt.notifications",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Notifications/delete-by-userId/{id}",
@@ -760,11 +946,11 @@
     },
     {
       "DownstreamPathTemplate": "/create-notification-settings",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44378"
+          "Host": "dislinkt.notifications",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Notifications/create-notification-settings",
@@ -773,11 +959,11 @@
 
     {
       "DownstreamPathTemplate": "/update-notification-settings",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44378"
+          "Host": "dislinkt.notifications",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Notifications/update-notification-settings",
@@ -786,11 +972,11 @@
 
     {
       "DownstreamPathTemplate": "/get-without-messages-by-userId",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44378"
+          "Host": "dislinkt.notifications",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Notifications/get-without-messages-by-userId",
@@ -799,11 +985,11 @@
 
     {
       "DownstreamPathTemplate": "/update-notification-seen",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44378"
+          "Host": "dislinkt.notifications",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/Notifications/update-notification-seen",
@@ -812,12 +998,24 @@
 
     //Admin Dashboard
     {
-      "DownstreamPathTemplate": "/create-activity",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44318"
+          "Host": "dislinkt.admindashboard",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AdminDashboard/",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/create-activity",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dislinkt.admindashboard",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/AdminDashboard/create-activity",
@@ -826,11 +1024,11 @@
 
     {
       "DownstreamPathTemplate": "/get-all",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44318"
+          "Host": "dislinkt.admindashboard",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/AdminDashboard/get-all",
@@ -839,11 +1037,11 @@
 
     {
       "DownstreamPathTemplate": "/delete-by-userId",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44318"
+          "Host": "dislinkt.admindashboard",
+          "Port": "80"
         }
       ],
       "UpstreamPathTemplate": "/api/AdminDashboard/delete-by-userId",
